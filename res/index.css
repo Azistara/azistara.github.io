@@ -25,7 +25,7 @@ h1, #header {
 }
 
 #content {
-    height: 75vh;
+    height: 500vh;
 }
 
 .stcBtn, .bttBtn {
@@ -53,18 +53,24 @@ div {
 
 .background::after{
     content: " ";
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-1px) scale(1.5);
+    transform: translateZ(-1px) scale(2);
+    translate: -4.2px;
     background-size: 100%;
     z-index: -1;
+    height: 100vh;
+
 }
 
 .background::after{
     background-image: url(./bkg.jpg);
+    background-size: 1000px;
+    background-repeat: repeat;
+    filter: brightness(80%);
 }
 
 /*Navigation*/
@@ -76,6 +82,7 @@ div {
     position: fixed;
     width: 98.5%;
     margin: 10px 10px 10px 10px;
+    z-index: 9;
 }
 
     /*NavButtons*/
