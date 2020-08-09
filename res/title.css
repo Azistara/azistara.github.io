@@ -1,0 +1,64 @@
+/*Azistara!*/
+
+/*Global*/
+body, html{
+	font-family: "Segoe UI","Delius","Arial";
+	background-image: linear-gradient(#b3caf1,#ffffff);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: #ffffff;
+	
+	margin: 0px;
+	padding: 10px;
+	height: 80%;
+}
+
+iframe{
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+h1{
+	font-family: "Delius";
+	font-size: xx-large;
+	font-weight: normal;
+}
+
+/*Classes*/
+
+.title{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 45px;
+}
+
+.content{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 5px;
+	top: 10%;
+}
+
+/*Navigation*/
+
+.navFrame{
+	border: none;
+	padding: 50%;
+}
+
+#nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navItem{
+	float: left;
+}
+
+.nvTx{
+	display: block;
+	padding: 10px;
+	background-color: deepskyblue;
+}
