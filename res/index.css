@@ -2,12 +2,12 @@
 /*Writtten August 8, 2020*/
 
 /*Main*/
-html {
+html{
     background-color: azure;
 }
 
 body {
-    background-color: azure;
+    background-image: linear-gradient(azure,#f0f0f0);
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
 }
@@ -25,11 +25,7 @@ h1, #header {
 }
 
 #content {
-    height: max-content;
-}
-
-.wrapper {
-    height: 500px;
+    height: 75vh;
 }
 
 .stcBtn, .bttBtn {
@@ -42,6 +38,34 @@ div {
 }
 
 /*Background*/
+.parallax{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.foreground{
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+
+.background::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.background::after{
+    background-image: url(./bkg.jpg);
+}
 
 /*Navigation*/
 #nav {
