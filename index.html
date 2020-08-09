@@ -3,52 +3,48 @@
 <!--Written August 8, 2020-->
 
 <html lang="en">
-    <head>
-        <title>Azistara</title>
-        <link rel="stylesheet" type="text/css" href="res/index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet"> 
-        <meta charset="utf-8">
-        <script>
-          window.onscroll = function() {myFunction()};
-          
-          var navbar = document.getElementById("nav");
-          var sticky = navbar.offsetTop;
-          
-          function myFunction() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
-          }
-          </script>
-    </head>
 
-    <body>
-        <div id="nav">
-            <a href="#"><img class="logoImg" src="res/lg.png"></a>
-            <a href="#">Blog</a>
-            <a href="#">Stuff</a>
-            <a href="#">Things</a>
-            <a href="#">About</a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <h1 id="header">Welcome!</h1>
-        <a class="stcBtn" href="#content">Skip to content.</a>
-        <hr>
-        <div id="content">
-            <p>As you can see here, there's nothing here quite yet. Cool things may come if you put all effort into it!</p>
-        </div>
+<head>
+  <title>Azistara</title>
+  <link rel="stylesheet" type="text/css" href="res/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
 
-        <div id="footer">
-          <center>
-            <p><i>Looks like you've reached the end of this page...</i></p>
-            <p class="attrib">©2020 Azistara</p>
-          </center>
-        </div>
-        <a class="bttBtn" href="#header">Back to top^</a>
-    </body>
-    </html>
+<body>
+  <!--Navigation-->
+  <div id="nav">
+    <a href="#"><img class="logoImg" src="res/lg.png"></a>
+    <a href="#">Blog</a>
+    <a href="#">Stuff</a>
+    <a href="#">Things</a>
+    <a href="#">About</a>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!--Header-->
+  <h1 id="header">Welcome!</h1>
+  <a class="stcBtn" href="#content">Skip to content.</a>
+  <hr>
+
+  <!--ContentArea-->
+  <div id="content">
+    <p>As you can see here, there's nothing here quite yet. Cool things may come if you put all effort into it!</p>
+  </div>
+
+  <!--Footer-->
+  <div id="footer">
+    <center>
+      <p><i>Looks like you've reached the end of this page...</i></p>
+      <p class="attrib">©2020 Azistara</p>
+    </center>
+  </div>
+
+  <a class="bttBtn" href="#header">Back to top^</a>
+</body>
+
+</html>

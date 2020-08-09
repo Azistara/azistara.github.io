@@ -1,34 +1,50 @@
 /*Aiboku*/
 /*Writtten August 8, 2020*/
 
-body{
+/*Main*/
+html {
+    background-color: azure;
+}
+
+body {
     background-color: azure;
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
 }
 
-h1, #header{
+h1, #header {
     font-family: 'Mali', cursive;
     font-weight: normal;
-    color:#4465A2;
-    padding-left: 10px;
+    color: #4465A2;
+    padding-left: 0px;
 }
 
-#content, #header, hr{
+#content, #header, hr {
     margin-left: 1%;
     margin-right: 1%;
 }
 
-#content{
-    height: 5000px;
+#content {
+    height: max-content;
 }
 
-.stcBtn, .bttBtn{
+.wrapper {
+    height: 500px;
+}
+
+.stcBtn, .bttBtn {
     display: none;
 }
 
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Background*/
+
 /*Navigation*/
-#nav{
+#nav {
     background-color: #eeeeee;
     overflow: hidden;
     padding: 0px;
@@ -37,45 +53,45 @@ h1, #header{
     width: 98.5%;
     margin: 10px 10px 10px 10px;
 }
+
     /*NavButtons*/
- #nav a{
-     float: left;
-     display: block;
-     color: darkgray;
-     list-style-type: none;
-     text-decoration: none;
-     text-align: center;
-     padding: 15px;
-     font-family: "Segoe UI";
- }
- #nav a:hover{
+#nav a {
+    float: left;
+    display: block;
+    color: darkgray;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    font-family: "Segoe UI";
+}
+#nav a:hover {
     background-color: #c5c5c5;
     color: white;
 }
 
     /*NavLogo*/
- #nav .logoImg{
-     height: 15px;
-     width: auto;
-     scale: 1.5;
-     padding: 1px 10px 0px 10px;
-     filter: grayscale(100%);
- }
- #nav .logoImg:hover{
-     filter: invert(100%) grayscale(100%);
- }
+#nav .logoImg {
+    height: 15px;
+    width: auto;
+    scale: 1.5;
+    padding: 1px 10px 0px 10px;
+    filter: grayscale(100%);
+}
+#nav .logoImg:hover {
+    filter: invert(100%) grayscale(100%);
+}
 /*EndNav*/
 
 /*Footer*/
-#footer{
+
+#footer {
     padding-top: 1px;
     padding-bottom: 1px;
     background-color: #f0f0f0;
     color: #a0a0a0;
 }
 
-#footer .attrib{
+#footer .attrib {
     font-size: 10px;
 }
-
-
