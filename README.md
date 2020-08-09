@@ -1,3 +1,3 @@
-# azurielbo.github.io
+# azistara.github.io
 AzurielBo's Github Pages repository.
-Visit https://azurielbo.github.io/
+Visit https://azistara.github.io/
