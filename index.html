@@ -9,6 +9,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet"> 
         <meta charset="utf-8">
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("nav");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
     </head>
 
     <body>
@@ -32,25 +46,9 @@
         <div id="footer">
           <center>
             <p><i>Looks like you've reached the end of this page...</i></p>
-            <p>©2020 AzurielBo</p>
+            <p class="attrib">©2020 AzurielBo</p>
           </center>
         </div>
         <a class="bttBtn" href="#header">Back to top^</a>
     </body>
-
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("nav");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
-
-</html>
+    </html>
