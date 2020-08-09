@@ -13,6 +13,10 @@ h1, #header{
     padding-left: 10px;
 }
 
+.stcBtn, .bttBtn{
+    display: none;
+}
+
 /*Navigation*/
 #nav{
     background-color: #eeeeee;
@@ -50,5 +54,12 @@ h1, #header{
      filter: invert(100%) grayscale(100%);
  }
 /*EndNav*/
+
+/*Footer*/
+#footer{
+    padding: 0;
+    background-color: #cacaca;
+    color: #a0a0a0;
+}
 
 
