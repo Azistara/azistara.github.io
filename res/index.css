@@ -6,7 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-#header{
+h1, #header{
     font-family: 'Mali', cursive;
     color:#4465A2;
     padding-left: 10px;
