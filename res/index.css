@@ -32,7 +32,7 @@ div {
     padding-left: 0px;
 }
 
-#content, #header, hr {
+#content, #header, .headerLine {
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -116,7 +116,7 @@ iframe, #burgerWrapper{
     height: 15px;
     width: auto;
     scale: 1.5;
-    padding: 1px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     filter: grayscale(100%);
 }
 /*EndNav*/
