@@ -12,10 +12,23 @@ body {
     margin: 0px;
 }
 
-h1, #header {
+body::-webkit-scrollbar {
+    display: none;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.stcBtn, .bttBtn {
+    display: none;
+}
+
+#header {
     font-family: 'Mali', cursive;
     font-weight: normal;
-    color: #4465A2;
+    color: #ffffff, #4465A2;
     padding-left: 0px;
 }
 
@@ -24,18 +37,20 @@ h1, #header {
     margin-right: 1%;
 }
 
-#content {
-    height: 500vh;
+#content{
+    height: 100vh;
 }
 
-.stcBtn, .bttBtn {
-    display: none;
-}
 
-div {
-    margin: 0px;
-    padding: 0px;
-}
+/*iFrame*/
+iframe, #burgerWrapper{
+    border: none;
+    width: 100%;
+    height: 99.3vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}  
 
 /*Background*/
 .parallax{
@@ -58,18 +73,12 @@ div {
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1.2px) scale(2);
     translate: -4.2px;
-    background-size: 100%;
     z-index: -1;
-    height: 100vh;
-
-}
-
-.background::after{
-    background-image: url(./bkg.jpg);
-    background-size: 1000px;
-    background-repeat: repeat;
+    background-image: url(./img/bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     filter: brightness(80%);
 }
 
@@ -96,9 +105,10 @@ div {
     padding: 15px;
     font-family: "Segoe UI";
 }
-#nav a:hover {
-    background-color: #c5c5c5;
-    color: white;
+#nav a:hover, .logoImg:hover {
+    background-color:#5c5c5c;
+    filter: invert(100%);
+    color: black;
 }
 
     /*NavLogo*/
@@ -106,11 +116,8 @@ div {
     height: 15px;
     width: auto;
     scale: 1.5;
-    padding: 1px 10px 0px 10px;
+    padding: 1px 0px 0px 0px;
     filter: grayscale(100%);
-}
-#nav .logoImg:hover {
-    filter: invert(100%) grayscale(100%);
 }
 /*EndNav*/
 
