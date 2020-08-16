@@ -1,0 +1,31 @@
+/*Aiboku
+  Written August 15, 2020
+
+  Additional Stylesheet to accomodate Materializecss
+  (Custom typefaces, padding, etc.)
+*/
+html{
+    /*background-color: #CCCCFF;*/
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#contentArea{
+    padding-left: 10px;
+    padding-right: 10px;
+    scrollbar-width: none;
+}
+
+h1, .navLogo{
+    font-family: 'Mali', cursive;
+    font-weight: normal;
+}
+
+#navi{
+    padding-right: 10px;
+    padding-left: 10px;
+}
