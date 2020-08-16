@@ -2,7 +2,7 @@
   "name": "aiboku",
   "version": "1.0.0",
   "description": "Azistara's GitHub Pages",
-  "main": "index.js",
+  "main": "aiboku.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Azistara/azistara.github.io/issues"
   },
-  "homepage": "https://github.com/Azistara/azistara.github.io#readme"
+  "homepage": "https://github.com/Azistara/azistara.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
