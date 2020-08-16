@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <!--Azistara 2020-->
-<!--Written August 10, 2020-->
-
-<html lang="en">
+<!--Written August 15, 2020-->
+<!--MaterialCss-->
 
 <head>
-  <title>Azistara.</title>
-  <link rel="stylesheet" type="text/css" href="res/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
-  <meta charset="utf-8">
+    <title>Materialize CSS Homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./res/css/materialize.css">
+    <link rel="stylesheet" href="./res/css/refinedMat.css">
+    <script src="./res/js/materialize.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--Navigation-->
-  <div id="nav" class="nav-wrapper">
-    <a href="#"><img class="logoImg" src="res/img/logo/az-tmp-dark.png"></a>
-    <a href="https://www.instagram.com/azistara/">Instagram</a>
-    <a href="https://github.com/azistara/">GitHub</a>
-    <!--<a href="#">Blog</a>
-    <a href="#">Stuff</a>
-    <a href="#">Things</a>
-    <a href="#">About</a>-->
-  </div>
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav id="navi" class="deep-purple accent-2 z-depth-3">
+            <a href="#" class="brand-logo navLogo">Aiboku</a>
+            <div class="naviWrap">
 
-  <iframe id="burgerWrapper" src="./main-page.html"></iframe>
+            </div>
+        </nav>
+    </div>
 
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <!--Parallax-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./res/img/purpleBkg.png">
+        </div>
+    </div>
+
+    <!--Body-->
+    <div id="contentArea">
+        <div class="card z-depth-2">
+            <center>
+                <h2 class="contentHeader">Azistara. Part artist, musician, and programmer.</h2>
+            </center>
+            <hr>
+            <p>
+                Welcome to my site, where I make things as well as do some blogging occasionally. There isn't anything to do here whatsoever but<br>
+                Thanks for stopping by. This site would soon be home to my creative output such as art and music.<br>
+                Don't worry I'm just the same old me, the one from Insta making art. But I have gone to do even more things.<br>
+                It's just only the beginning.
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer grey lighten-3">
+        <div class="footer-copyright" style="padding: 0px 10px 0px 10px">
+            <p>
+                <center class="grey-text">
+                    ©2020 Azistara
+                </center>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        M.AutoInit();
+    </script>
 </body>
-
-</html>
