@@ -1,31 +1,19 @@
 /*Aiboku
   Written August 15, 2020
-
-  Additional Stylesheet to accomodate Materializecss
-  (Custom typefaces, padding, etc.)
 */
+
+/*HTML*/
 html{
     /*background-color: #CCCCFF;*/
     overflow-y: scroll;
     scrollbar-width: none;
 }
-
 ::-webkit-scrollbar{
     display: none;
 }
 
-#contentArea{
-    padding-left: 20px;
-    padding-right: 20px;
-    scrollbar-width: none;
-}
-
-.card{
-    padding: 5px 20px 5px 20px;
-    margin: -200px 10px 10px 10px ;
-}
-
-h1, .navLogo{
+/*Global*/
+h1,h2,h3,h4,h5,h6, .navLogo{
     font-family: 'Mali', cursive;
     font-weight: normal;
 }
@@ -35,7 +23,57 @@ h1, .navLogo{
     font-size: 45px;
 }
 
-#navi{
+#nav{
     padding-right: 10px;
     padding-left: 10px;
+}
+
+/*Refinements*/
+.card{
+    padding: 5px 20px 5px 20px;
+    margin: -200px 10px 10px 10px ;
+}
+
+/*Content*/
+#contentArea{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.paraHeader{
+    padding-left: 30px;
+    padding-right: 10px;
+    margin: -400px 10px 250px 10px ;
+    color: white;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
+/*-Post Pages*/
+
+.postBox{
+    margin: -50px 10px 10px 10px ;
+}
+
+.postSct{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.postContent{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 70%;
+    word-wrap: break-word;
+}
+
+.metaArea{
+    width: 20%;
+    word-wrap: break;
+}
+
+.postWrap::after{
+    content: "";
+    display: table;
+    clear: both;
 }
