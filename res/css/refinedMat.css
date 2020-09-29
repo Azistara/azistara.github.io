@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5,h6 .navLogo{
     padding-right: 10px;
     margin: -400px 10px 250px 10px ;
     color: white;
-    text-shadow: 0.5px 0.5px 2px black;
+    text-shadow: 0.5px 0.5px 15px rgb(130, 130, 130);
 }
 
 /*-Post Pages*/
