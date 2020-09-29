@@ -1,0 +1,107 @@
+/*Aiboku
+  Written August 15, 2020
+*/
+
+/*HTML*/
+html{
+    /*background-color: #CCCCFF;*/
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*Global*/
+h1,h2,h3,h4,h5,h6 .navLogo{
+    font-family: 'Mali', cursive;
+    font-weight: normal;
+}
+
+.contentHeader, .navLogo{
+    font-family: 'Mali', cursive;
+    font-size: 45px;
+}
+
+#nav{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Refinements*/
+.card{
+    padding: 5px 20px 5px 20px;
+    margin: -200px 10px 10px 10px ;
+}
+
+.material-icons{
+    vertical-align: -4.75px;
+}
+
+/*Content*/
+#contentArea{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.paraHeader{
+    padding-left: 30px;
+    padding-right: 10px;
+    margin: -400px 10px 250px 10px ;
+    color: white;
+    text-shadow: 0.5px 0.5px 15px rgb(130, 130, 130);
+}
+
+/*-Post Pages*/
+#category{
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+
+#tags h6{
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #d3d3d3;
+}
+
+.postBox{
+    margin: -50px 10px 10px 10px ;
+}
+
+.dateStamp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #bdbdbd;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.postSct{
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.postContent{
+    margin-top: -20px;
+    width: 70%;
+    word-wrap: break-word;
+}
+
+.metaArea{
+    width: auto;
+    word-wrap: break;
+}
+
+.postWrap::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.chipBag{
+    padding-left: 50px;
+    padding-right: 50px;
+}
