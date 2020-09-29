@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<head>
+    <title>.</title>
+    <meta charset="utf-8" content="width=device-width, initial-scale=0.8," name="viewport">>
+</head>
+
+{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+{{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+{% endunless %}

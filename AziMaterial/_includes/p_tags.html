@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+    <title>tags</title>
+    <meta charset="utf-8" content="width=device-width, initial-scale=0.8," name="viewport">
+</head>
+
+{% for tag in site.tags %}
+<p class="chip tagItem">{{ tag[0] }}</p>
+<!-- <ul>
+    {% for post in tag[1] %}
+    <li>
+        <div class="chip"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    </li>
+    {% endfor %}
+</ul> -->
+{% endfor %}
