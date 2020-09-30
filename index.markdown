@@ -4,3 +4,10 @@
 
 layout: home
 ---
+
+Hello!
+This is my website!\
+I am a string of text.\
+This is Project:Aiboku\
+![image info](./assets/img/ab.png)
+
