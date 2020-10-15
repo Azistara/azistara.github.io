@@ -28,7 +28,7 @@ twitter_username:
 github_username:  azistara
 
 # Build settings
-theme: minima
+theme: "minima", "~> 2.5"
 plugins:
   - jekyll-feed
 
