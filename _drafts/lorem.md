@@ -3,7 +3,7 @@ title: lorem
 subtitle: ipsum
 
 authors: Aiboku
-date: 2020-14-10
+date: 2020-10-14
 
 layout: post
 categories: "Lorem Ipsum"

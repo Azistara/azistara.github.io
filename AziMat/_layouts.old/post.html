@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--Aiboku-->
+<!--Azistara 2020
+    Jekyll Posts template.
+    https://azistara.github.io/
+-->
+
+<head>
+    <title>{{ page.title }} >> Azistara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/aziMat.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./assets/js/materialize.js"></script>
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large light-blue tooltipped" href="#top" data-position="left" data-tooltip="Scroll to top">
+            <i class="large material-icons" style="font-size: xx-large;">keyboard_arrow_up</i>
+         </a>
+    </div>
+
+    <div id="top" class="parallax-container" style="margin: -64px 0 0px 0;">
+        <div class="parallax">
+            <img src="./assets/img/bkg.png">
+        </div>
+    </div>
+
+    <div id="contentArea">
+        <div class="card">
+            <header>
+                
+                <h1>{{ post.title }}</h1>
+                <h4>{{ post.author }}</h4>
+                <cat>
+                    <chip class="cat">Announcements</chip>
+                </cat>
+            </header>
+            <article>
+                <h1>Dixti Stara! h1</h1>
+                <h2>Dixti Stara! h2</h2>
+                <h3>Dixti Stara! h3</h3>
+                <h4>Dixti Stara! h4</h4>
+                <h5>Dixti Stara! h5</h5>
+                <h6>Dixti Stara! h6</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Vulputate enim nulla aliquet porttitor lacus luctus. Vulputate mi sit amet mauris
+                    commodo quis. Accumsan in nisl nisi scelerisque eu ultrices. At risus viverra adipiscing at in tellus
+                    integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Egestas maecenas pharetra
+                    convallis posuere morbi. Pulvinar sapien et ligula ullamcorper malesuada proin libero. At consectetur
+                    lorem donec massa sapien faucibus et molestie. Non quam lacus suspendisse faucibus interdum posuere
+                    lorem ipsum. Neque aliquam vestibulum morbi blandit cursus. Morbi tristique senectus et netus et
+                    malesuada. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit.
+
+                    Amet purus gravida quis blandit. Ornare quam viverra orci sagittis eu volutpat odio. Vitae nunc sed
+                    velit dignissim. Pellentesque id nibh tortor id aliquet. Mi bibendum neque egestas congue quisque
+                    egestas diam in arcu. Purus faucibus ornare suspendisse sed. Dui ut ornare lectus sit amet est. Duis at
+                    consectetur lorem donec massa sapien faucibus. Ultricies tristique nulla aliquet enim. Etiam sit amet
+                    nisl purus in mollis nunc sed. Congue nisi vitae suscipit tellus. Aliquam eleifend mi in nulla posuere
+                    sollicitudin aliquam. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Ultricies
+                    tristique nulla aliquet enim tortor.
+
+                    Faucibus turpis in eu mi. Porttitor leo a diam sollicitudin tempor id. Sit amet cursus sit amet dictum
+                    sit amet justo donec. Eros donec ac odio tempor orci dapibus ultrices. Tortor posuere ac ut consequat
+                    semper. Vestibulum lorem sed risus ultricies. Fusce ut placerat orci nulla pellentesque dignissim enim
+                    sit. Ac feugiat sed lectus vestibulum mattis ullamcorper. At tempor commodo ullamcorper a lacus
+                    vestibulum sed arcu non. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
+                    Diam maecenas sed enim ut sem viverra aliquet eget sit. Integer vitae justo eget magna fermentum.
+                    Interdum velit laoreet id donec ultrices tincidunt arcu non. Pharetra et ultrices neque ornare aenean.
+                </p>
+            </article>
+            <h6>Tags</h6>
+            <div class="chipBag">
+                <chip>Chips</chip>
+                <chip>Chips</chip>
+                <chip>Chips</chip>
+                <chip>Chips</chip>
+                <chip>Chips</chip>
+
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+<script>
+    M.AutoInit();
+</script>

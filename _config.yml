@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Azistara!
+title: Azistara
 email: cerealbowlres@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my little website!
@@ -28,9 +28,14 @@ twitter_username:
 github_username:  azistara
 
 # Build settings
-theme: "minima", "~> 2.5"
+theme: minima
 plugins:
   - jekyll-feed
+
+# Plugin Settings here.
+# - jekyll-tagging
+tag_page_layout: tag_page
+tag_page_dir: tags
 
 # Exclude from processing.
 # The following items will not be processed, by default.
