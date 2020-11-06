@@ -1,0 +1,101 @@
+---
+title: Form Playground
+layout: default
+---
+
+<form id="desktopForm">
+    <row class="row">
+        <col class="col s12">
+        <!--Personal Info-->
+        <row class="row" id="personalInfo">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <label for="first_name" class="truncate">First name</label>
+                <input type="text" id="first_name" class="validate" required>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">null</i>
+                <label for="last_name" class="truncate">Last name</label>
+                <input type="text" id="last_name" class="validate" required>
+            </div>
+        </row>
+        <!--Contact Info-->
+        <row class="row s12" id="contactInfo">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <label for="email" class="truncate">Email address</label>
+                <input type="email" id="email" class="validate" required>
+                <span class="helper-text" data-error="Oops! That's not a valid email...">Needed in case I need to contact you for
+                    more info</span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <label for="phone" class="truncate">Phone number</label>
+                <input type="tel" id="phone">
+                <span class="helper-text">Optional</span>
+            </div>
+        </row>
+        <!--Date and Time-->
+        <row class="row s3" id="dateTimeDekstop">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">event</i>
+                <label for="date">Date</label>
+                <input type="text" id="date" class="datepicker">
+                <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">schedule</i>
+                <label for="time">Time</label>
+                <input type="text" id="time" class="timepicker">
+                <span class="helper-text">Time is in 24-hour format. (16hr = 12 + 4)</span>
+            </div>
+            <!--Other fields-->
+            <div class="input-field col s6">
+                <i class="material-icons prefix">alternate_email</i>
+                <label for="gh-username" class="truncate">GitHub Username</label>
+                <input type="text" id="gh-username">
+                <span class="helper-text">Optional</span>
+            </div>
+        </row>
+        </row>
+        <!--Big Text Area-->
+        <div class="input-field col s12">
+            <i class="material-icons prefix">comment</i>
+            <label for="txtarea" class="truncate">Feeback here....</label>
+            <textarea class="materialize-textarea validate" id="txtarea" data-length="1000" required></textarea>
+        </div>
+        </col>
+        <div class="right-align">
+            <a href="#modal" class="btn-small deep-purple accent-2 waves-effect white-text modal-trigger">Submit</a>
+        </div>
+    </row>
+    <!--Modal-->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4><b>Confirm submission</b></h4>
+            <p>Are you sure you want to submit this form?</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect deep-purple accent-1 btn-flat pulse">Don't Submit</a>
+            <button type="submit" class="modal-close waves-effect btn-flat">Submit</button>
+        </div>
+      </div>
+</form>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.timepicker');
+        var instances = M.Timepicker.init(elems, {
+            twelveHour: false
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal','#modal');
+        var instances = M.Modal.init(elems, {
+            dismissible:false,
+            preventScrolling: true
+        });
+    });
+
+</script>

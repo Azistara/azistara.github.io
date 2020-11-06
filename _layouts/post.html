@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Aiboku Standard Post-->
+<!--Jekyll theme
+    © Azistara 2020
+    https://azistara.github.io/
+-->
+
+<head>
+    <title>{{ page.title }} » {{ site.title }} Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/aziMat.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/assets/js/materialize.js"></script>
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large white tooltipped stt" href="#top" data-position="left"
+            data-tooltip="Scroll to top">
+            <i class="large material-icons grey-text darken-3" style="font-size: xx-large;">arrow_upward</i>
+        </a>
+    </div>
+
+    <div id="top" class="parallax-container" style="margin: -64px 0 0px 0;" data-responsiveThreshold="10">
+        <div class="parallax">
+            <img src="{{page.hero}}">
+        </div>
+    </div>
+
+    <div id="contentArea">
+        <div class="card">
+            <header>
+                <h5 class="post-date"><i
+                        class="material-icons">event</i>&nbsp;&nbsp;{{ page.date | date: "%b %d, %Y %H:%M" }}&nbsp;
+                    •&nbsp;&nbsp;<i class="material-icons">schedule</i>{% capture words %}
+                    {{ content | number_of_words | minus: 180 }}
+                    {% endcapture %}
+                    {% unless words contains '-' %}
+                    {{-words | plus: 150 | divided_by: 150 | append: ' minutes'-}}
+                    {% endunless %}
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <h5 class="post-author">by {{ page.author }}</h5>
+                    <br>
+                    <cat>
+                        {% for categories in page.categories %}
+                        {% capture cat %} {{-categories-}} {% endcapture %}
+                        <chip class="cat light-blue lighten-4 blue-text">{{ cat }}</chip>
+                        {% endfor %}
+                    </cat>
+            </header>
+            <br>
+            <div class="divider"></div>
+            <article>
+                {{ content }}
+            </article>
+
+            <h6>Tags</h6>
+            <chips>
+                {% for tags in page.tags %}
+                {% capture tag_name %} {{-tags-}} {% endcapture %}
+                <a href="/tags/{{tag_name}}">
+                    <chip class="tag"><i class="material-icons inline">local_offer</i>{{ tag_name }}</chip>
+                </a>
+                {% endfor %}
+            </chips>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+<script>
+    M.AutoInit();
+</script>

@@ -1,0 +1,48 @@
+<!--Aiboku Navbar Module-->
+<!--Written 10/30/2020-->
+
+<div class="navbar-fixed" id="navi">
+    <nav class="z-depth-4 dynColor">
+        <div class="nav-wrapper">
+            <a class="sidenav-trigger" href="#" data-target="snav"><i class="material-icons">menu</i></a>
+            <a class="navLogo" href="/index.html">Azistara</a>
+            <ul class="nav-link right hide-on-med-and-down">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Repositories</a></li>
+                <li><a href="#">Fun Stuff</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="sidenav z-depth-2 dynTheme" id="snav">
+    <ul class="sidenav-wrapper">
+        <li class="navbar sidenav-header">
+            <h4 class="navHead">Navigation</h4>
+        </li>
+        <li><a href="#"><i class="material-icons">chat</i> Blog</a></li>
+        <li><a href="#"><i class="material-icons">build</i>Repositories</a></li>
+        <li><a href="#"><i class="material-icons">bubble_chart</i>Fun Stuff</a></li>
+        <li><a href="#"><i class="material-icons">info</i>About</a></li>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var pushpins = document.querySelectorAll(".pushpin");
+        pushpins.forEach(function (element) {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var elemRect = element.getBoundingClientRect();
+            var parentRect = element.parentElement.getBoundingClientRect();
+            var elemTop = scrollTop + elemRect.top;
+
+            var instancePushpin = M.Pushpin.init(element, {
+                top: elemTop,
+                bottom: elemTop + parentRect.height - elemRect.height
+            });
+        })
+    });
+</script>
+
+<!--End Navbar-->

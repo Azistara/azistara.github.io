@@ -1,0 +1,167 @@
+/*Aiboku*/
+@import url(materialize.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Mali:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+
+html{
+    /*background-color: #CCCCFF;*/
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-family: 'Roboto',sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.material-tooltip{
+    font-weight: bold;
+    background-color: rgba(110, 110, 110, 0.6);
+    border-radius: 100px;
+    margin: 2px 0 2px 0;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.azFooter{
+    color: #9e9e9e;
+}
+
+/*Headers*/
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+h6{
+    text-transform: uppercase;
+    color: lightgray;
+}
+
+h4.navHead{
+    font-family: 'IBM Plex Sans',monospace,sans-serif;
+    font-size: xx-large;
+}
+
+h1.hdwrite,h2.hdwrite,h3.hdwrite,h4.hdwrite,h5.hdwrite,h6.hdwrite{
+    font-family: 'Mali',cursive
+}
+
+/*Navbar*/
+.navLogo {
+    font-family: 'Mali', cursive;
+    font-weight: normal;
+    font-size: xx-large;
+    transition: ease-in-out 0.5s;
+    margin-top: -100px;
+}
+
+.navLogo:hover {
+
+    text-shadow: 0px 0px 10px;
+}
+
+nav {
+    background-color: #7984e9cb;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-wrapper {
+    padding: 0 10px 0 10px;
+}
+
+.sidenav-trigger {
+    font-size: 45px;
+}
+
+.sidenav {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.sidenav ul.sidenav-wrapper .sidenav-header  {
+    padding-left: 10px;
+}
+
+.sidenav-overlay {
+    animation: blur 0.3s ease-in both;
+}
+
+@keyframes blur {
+    0% {
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+
+    100% {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+/*Content*/
+.contentHeader{
+    font-family: 'Mali', cursive;
+    font-size: 45px;
+}
+
+#contentArea{
+    padding-left: 20px;
+    padding-right: 20px;
+    scrollbar-width: none;
+}
+
+.card{
+    padding: 5px 20px 5px 20px;
+    margin: -100px 5% 20px 5% ;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1300px){
+    #contentArea{
+        padding-left: 50px;
+        padding-right: 50px;
+        scrollbar-width: none;
+    }
+    
+    .card{
+        padding: 5px 35px 5px 35px;
+        margin: -100px 0 0 0 ;
+        transition: 0.2s;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #contentArea{
+        padding-left: 0px;
+        padding-right: 0px;
+        scrollbar-width: none;
+    }
+    
+    .card{
+        padding: 5px 20px 5px 20px;
+        margin: -50px 0 0 0 ;
+        transition: 0.2s;
+        border-radius: 0;
+    }
+}
+
+chip.cat{
+    background-color:#8c9eff;
+    color: white;
+}

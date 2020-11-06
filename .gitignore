@@ -1,3 +1,6 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 node_modules
-old_index.html
-main-page.html
