@@ -17,6 +17,10 @@ html {
     display: none;
 }
 
+.nav-link{
+    display:none;
+}
+
 .material-tooltip {
     font-weight: bold;
     font-size: 14px;
