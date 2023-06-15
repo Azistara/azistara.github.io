@@ -57,11 +57,11 @@ layout: homepage
             indicators:false,
             interval:5000,
         });
-        //var dialog = document.getElementById('notice1');
-        //var dlg = M.Modal.init(dialog, {
-        //    dismissible:false,
-        //    });
-        //dlg.open();
+        var dialog = document.getElementById('notice1');
+        var dlg = M.Modal.init(dialog, {
+           dismissible:false,
+           });
+        dlg.open();
     });
 </script>
  
