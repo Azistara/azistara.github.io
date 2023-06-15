@@ -39,7 +39,7 @@ layout: homepage
         <div class="modal-content">
         <h4>This site is outdated.</h4>
         <p>
-            I haven't touched my GitHub Page since 2020 and there is barely and content here.
+            I haven't touched my GitHub Page since 2020 and there is barely any content here.
             I promise to rewrite this entire site soon.
             </p>
         </div>
