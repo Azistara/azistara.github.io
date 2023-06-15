@@ -34,17 +34,17 @@ layout: homepage
     </ul>
 </div>
 
-<!--<div id="notice1" class="modal bottom-sheet">
+<div id="notice1" class="modal bottom-sheet">
     <div class="modal-content">
-      <h4>Notice</h4>
+      <h4>This site is outdated.</h4>
       <p>
-        Test message.
+        I primise to rewrite this entire site soon.
         </p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-teal btn-flat">got it</a>
     </div>
-  </div>-->
+  </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
