@@ -38,7 +38,7 @@ layout: homepage
     <div class="modal-content">
       <h4>This site is outdated.</h4>
       <p>
-        I primise to rewrite this entire site soon.
+        I promise to rewrite this entire site soon.
         </p>
     </div>
     <div class="modal-footer">
