@@ -35,12 +35,15 @@ layout: homepage
 </div>
 
 <div id="notice1" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>This site is outdated.</h4>
-      <p>
-        I promise to rewrite this entire site soon.
-        </p>
-    </div>
+    <center>
+        <div class="modal-content">
+        <h4>This site is outdated.</h4>
+        <p>
+            I haven't touched this site since 2020 and there is barely and content here.
+            I promise to rewrite this entire site soon.
+            </p>
+        </div>
+    </center>
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-teal btn-flat">got it</a>
     </div>
